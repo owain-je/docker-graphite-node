@@ -49,7 +49,7 @@ ADD curator/run.sh /etc/cron.d/curator.sh
 RUN chmod +x /etc/cron.d/curator.sh
 
 ADD entrypoint.sh /entrypoint.sh
-
+RUN chmod 755 /entrypoint.sh
 # Nginx
 expose	80
 # Carbon line receiver port
